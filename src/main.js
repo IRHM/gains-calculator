@@ -16,13 +16,22 @@ function calculate() {
   let amountPurchased = iAmountPurchased.value;
   let sellAtPrice = iSellAtPrice.value;
 
+  // iError("boughtAtPrice");
+
   if (boughtAtPrice && amountPurchased && sellAtPrice) {
     console.log(boughtAtPrice, amountPurchased, sellAtPrice);
 
     let amountRecieved = amountPurchased / boughtAtPrice;
     let gainsRecieved = sellAtPrice * amountRecieved - amountPurchased;
 
-    iAmountRecieved.innerHTML = amountRecieved;
-    iGainsRecieved.innerHTML = gainsRecieved;
+    iAmountRecieved.innerHTML = `£${amountRecieved}`;
+    iGainsRecieved.innerHTML = `£${gainsRecieved}`;
+  }
+}
+
+function iError(inputName) {
+  if (inputName == "boughtAtPrice") {
+    iBoughtAtPrice.style.borderColor = "#EC255A";
+    // add error msg in placeholder
   }
 }
