@@ -5,47 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gains Calculator</title>
-    <script src="./main.js" defer></script>
+    <script src="./calc.js" type="module" defer></script>
+    <script src="./help.js" type="module" defer></script>
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <div class="page">
       <div class="content">
-        <div class="inputs">
-          <label for="Bought At Price">
-            <input name="Bought At Price" id="boughtAtPrice" type="text" placeholder />
-            <span>
-              <p>Bought At Price</p>
-              <p id="eBoughtAtPrice"></p>
-            </span>
-          </label>
-
-          <label for="Amount Purchased">
-            <input name="Amount Purchased" id="amountPurchased" type="text" placeholder />
-            <span>
-              <p>Amount Purchased (in £)</p>
-              <p id="eAmountPurchased"></p>
-            </span>
-          </label>
-
-          <label for="Sell At Price">
-            <input name="Sell At Price" id="sellAtPrice" type="text" placeholder />
-            <span>
-              <p>Sell At Price</p>
-              <p id="eSellAtPrice"></p>
-            </span>
-          </label>
-        </div>
-
-        <div>
-          <span>Amount Recieved:</span>
-          <span id="amountRecieved"></span>
-        </div>
-
-        <div>
-          <span>Gains Recieved:</span>
-          <span id="gainsRecieved"></span>
-        </div>
+        <nav id="calcsNav"></nav>
+        <div id="calcForm" class="inputs"></div>
       </div>
     </div>
   </body>

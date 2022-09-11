@@ -22,6 +22,31 @@ body {
   margin-top: 20px;
 }
 
+nav {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+nav a {
+  padding: 5px;
+  color: black;
+  background-color: rgb(255, 207, 207);
+  border: 2px solid rgb(255, 207, 207);
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 250ms ease;
+}
+
+nav a:hover {
+  background-color: transparent;
+}
+
+h1 {
+  text-transform: capitalize;
+}
+
 .inputs {
   display: flex;
   flex-flow: column;
@@ -74,4 +99,9 @@ input {
 
 input.error {
   border: 1px solid #ec255a;
+}
+
+.resultsDiv {
+  display: flex;
+  flex-flow: column;
 }
