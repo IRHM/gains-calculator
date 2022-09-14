@@ -68,7 +68,7 @@ label span {
   pointer-events: none;
   position: absolute;
   left: 12px;
-  top: 16px;
+  top: 14.5px;
   padding: 0 2px;
   opacity: 0.5;
   font-size: 12px;
@@ -87,7 +87,7 @@ label input:focus + span,
 label input:not(:placeholder-shown) + span {
   opacity: 1;
   font-weight: 700;
-  top: 0px;
+  top: -3px;
   transform: translateY(25%) translateX(-5px);
 }
 

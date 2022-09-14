@@ -41,6 +41,7 @@ function loadCalculator() {
       label.setAttribute("for", v);
       const input = document.createElement("input");
       input.addEventListener("keyup", (ev) => calc.func(ev, calc.els));
+      input.placeholder = "";
       label.insertAdjacentElement("beforeend", input);
       label.insertAdjacentHTML(
         "beforeend",
