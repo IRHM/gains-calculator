@@ -21,3 +21,7 @@ function iError(input, isError = true) {
     }
   }
 }
+
+export function formatNum(num) {
+  return num.toLocaleString(undefined, { minimumFractionDigits: 5 });
+}

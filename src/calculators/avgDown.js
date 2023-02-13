@@ -1,4 +1,4 @@
-import { checkForErrors } from "../help.js";
+import { checkForErrors, formatNum } from "../help.js";
 
 export const vars = [
   "Shares Owned",
@@ -21,9 +21,9 @@ export function calc(ev, els) {
     let avg = totalSpent / totalShares;
 
     els.results.innerHTML = `
-      <span>Average Price: £${avg}</span>
-      <span>Total Shares: ${totalShares}</span>
-      <span>Total Spent: £${totalSpent}</span>
+      <span>Average Price: £${formatNum(avg)}</span>
+      <span>Total Shares: ${formatNum(totalShares)}</span>
+      <span>Total Spent: £${formatNum(totalSpent)}</span>
     `;
   } else {
     els.results.innerHTML = `

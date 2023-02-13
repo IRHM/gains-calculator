@@ -1,4 +1,4 @@
-import { checkForErrors } from "../help.js";
+import { checkForErrors, formatNum } from "../help.js";
 
 export const vars = [
   "Bought At Price",
@@ -18,8 +18,8 @@ export function calc(ev, els) {
     let gainsRecieved = sellAtPrice * sharesBought - amountPurchased;
 
     els.results.innerHTML = `
-      <span>Shares bought: ${sharesBought}</span>
-      <span>Gains recieved: £${gainsRecieved}</span>
+      <span>Shares bought: ${formatNum(sharesBought)}</span>
+      <span>Gains recieved: £${formatNum(gainsRecieved)}</span>
     `;
   } else {
     els.results.innerHTML = `
